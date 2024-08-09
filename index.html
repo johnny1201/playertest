@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Player</title>
+     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        video {
+            max-width: 100%;
+            height: auto;
+            width: 100%;
+            object-fit: contain; /* This ensures the video scales proportionally */
+        }
+    </style>
 </head>
 <body>
     <h1>Video Player</h1>
