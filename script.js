@@ -1,8 +1,11 @@
 // Example link to the m3u8 manifest
-const videoManifestUrl = 'https://sp.cdnsimba.com.br/bpk-tv/Record01/default/index.m3u8';
+const videoManifestUrl = 'https://example.com/path/to/video/manifest.m3u8';
 
 function loadVideo() {
     const video = document.getElementById('videoPlayer');
+
+    // Ensure the video is muted for autoplay to work
+    video.muted = true;
 
     if (Hls.isSupported()) {
         const hls = new Hls();
